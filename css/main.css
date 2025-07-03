@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+image,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p, li, figcaption {
+  text-wrap: pretty;
+}
