@@ -44,8 +44,9 @@ p, li, figcaption {
   text-wrap: pretty;
 }
 
-body {
+.main-container {
   background-color: var(--purple-100);
+  position: relative;
 }
 
 .faq-container {
@@ -53,4 +54,13 @@ body {
   margin: 0 auto;
   background-color: var(--white);
   padding: 1rem;
+  margin-top: -10vh;
+}
+
+.header {
+  background-image: url("/assets/images/background-pattern-mobile.svg");
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
