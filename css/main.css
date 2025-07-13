@@ -92,6 +92,11 @@ p, li, figcaption {
 .accordion-question {
   display: flex;
   justify-content: space-between;
+
+}
+
+.accordion-item:nth-of-type(-n + 3) {
+  border-bottom: 1px solid var(--purple-100);
 }
 
 .accordion-item-title {
@@ -115,6 +120,8 @@ p, li, figcaption {
   font-size: 14px;
   line-height: 1.6;
 }
+
+
 
 @media screen and (min-width: 600px) {
   .header {
