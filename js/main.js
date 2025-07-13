@@ -8,6 +8,7 @@ document.addEventListener("click", (e)=> {
 
     const $faqTitle = $accordionItem.querySelector(".accordion-item-title");
     const $faqAnswer = $accordionItem.querySelector(".accordion-answer");
+    const $faqIcon = $accordionItem.querySelector(".accordion-item-icon");
 
     // expands answer
     $faqAnswer.hidden = !$faqAnswer.hidden;
@@ -17,9 +18,9 @@ document.addEventListener("click", (e)=> {
 
     // changes the image on .accordion-item-icon
     if(!$faqAnswer.hidden) {
-      $accordionIcon.src = "./assets/images/icon-minus.svg";
+      $faqIcon.src = "./assets/images/icon-minus.svg";
     } else {
-      $accordionIcon.src = "./assets/images/icon-plus.svg";
+      $faqIcon.src = "./assets/images/icon-plus.svg";
     }
   }
 
