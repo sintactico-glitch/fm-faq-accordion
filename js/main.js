@@ -27,20 +27,48 @@ document.addEventListener("click", (e)=> {
   if(e.target === $faqIcon1 || e.target === $faqHeader1) {
     console.log("icon 1");
     $faqAnswer1.hidden = !$faqAnswer1.hidden;
+
+    if(!$faqAnswer1.hidden) {
+      console.log("minus icon should be shown")
+      $faqIcon1.src = "./assets/images/icon-minus.svg"; 
+    } else {
+      $faqIcon1.src = "./assets/images/icon-plus.svg";
+    }
   }
 
   if(e.target === $faqIcon2 || e.target === $faqHeader2) {
     console.log("icon 2")
     $faqAnswer2.hidden = !$faqAnswer2.hidden;
+
+    if(!$faqAnswer2.hidden) {
+      console.log("minus icon should be shown")
+      $faqIcon2.src = "./assets/images/icon-minus.svg"; 
+    } else {
+      $faqIcon2.src = "./assets/images/icon-plus.svg";
+    }
   }
 
   if(e.target === $faqIcon3 || e.target === $faqHeader3) {
     console.log("icon 3")
     $faqAnswer3.hidden = !$faqAnswer3.hidden;
+
+    if(!$faqAnswer3.hidden) {
+      console.log("minus icon should be shown")
+      $faqIcon3.src = "./assets/images/icon-minus.svg"; 
+    } else {
+      $faqIcon3.src = "./assets/images/icon-plus.svg";
+    }
   }
 
   if(e.target === $faqIcon4 || e.target === $faqHeader4) {
     console.log("icon 4")
     $faqAnswer4.hidden = !$faqAnswer4.hidden;
+
+    if(!$faqAnswer4.hidden) {
+      console.log("minus icon should be shown")
+      $faqIcon4.src = "./assets/images/icon-minus.svg"; 
+    } else {
+      $faqIcon4.src = "./assets/images/icon-plus.svg";
+    }
   }
 })
