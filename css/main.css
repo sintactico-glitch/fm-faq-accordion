@@ -43,3 +43,54 @@ h1, h2, h3, h4, h5, h6 {
 p, li, figcaption {
   text-wrap: pretty;
 }
+
+.main-container {
+  background-color: var(--purple-100);
+  position: relative;
+}
+
+.faq-container {
+  /* fallback for internet explorer */
+  min-width: 320px;
+  max-width: 500px;
+  width: 60vw;
+  /*  */
+  width: clamp(320px, 60vw, 500px);
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 1rem;
+  margin-top: -10vh;
+}
+
+.header {
+  background-image: url("/assets/images/background-pattern-mobile.svg");
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 35vh;
+    background-position: top;
+  }
+
+  .faq-container {
+    margin-top: -15vh;
+  }
+}
+
+@supports not (clamp()) {
+  .faq-container {
+    min-width: 320px;
+    max-width: 500px;
+    width: 60vw;
+  }
+}
