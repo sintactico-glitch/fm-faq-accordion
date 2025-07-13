@@ -43,3 +43,15 @@ h1, h2, h3, h4, h5, h6 {
 p, li, figcaption {
   text-wrap: pretty;
 }
+
+.main-container {
+  background-color: var(--purple-100);
+  min-height: 100vh;
+}
+
+.faq-container {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 1rem;
+}
