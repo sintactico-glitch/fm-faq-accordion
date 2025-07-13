@@ -50,7 +50,12 @@ p, li, figcaption {
 }
 
 .faq-container {
-  max-width: 80%;
+  /* fallback for internet explorer */
+  min-width: 320px;
+  max-width: 500px;
+  width: 60vw;
+  /*  */
+  width: clamp(320px, 60vw, 500px);
   margin: 0 auto;
   background-color: var(--white);
   padding: 1rem;
@@ -63,4 +68,18 @@ p, li, figcaption {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+  }
+}
+
+@supports not (clamp()) {
+  .faq-container {
+    min-width: 320px;
+    max-width: 500px;
+    width: 60vw;
+  }
 }
