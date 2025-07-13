@@ -6,6 +6,7 @@
   --purple-100: hsl(275, 100%, 97%);
   --purple-600: rgb(140, 105, 145);
   --purple-950: rgb(47, 21, 51);
+  --purple-hover: #AD28EB;
   --weight-regular: 400;
   --weight-semi-bold: 600;
   --weight-bold: 700;
@@ -27,6 +28,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  color: var(--purple-950);
 }
 
 image,
@@ -99,6 +101,13 @@ p, li, figcaption {
   font-weight: 600;
   font-size: 16px;
   text-align: start;
+  transition: color 0.2s ease-in-out;
+}
+
+.accordion-item-title:hover {
+  cursor: pointer;
+  color: var(--purple-hover);
+  transition: color 0.2s ease-in-out;
 }
 
 .accordion-answer {
