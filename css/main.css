@@ -119,6 +119,7 @@ p, li, figcaption {
   color: var(--purple-600);
   font-size: 14px;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 
