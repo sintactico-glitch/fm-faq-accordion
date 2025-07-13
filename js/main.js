@@ -1,7 +1,3 @@
-/* 
-Detect if the click was on the .accordion-question to make sure the entire element is clickable and activates the functionality
-*/
-
 document.addEventListener("click", (e)=> {
   const clickedElement = e.target;
   const $accordionTitle = clickedElement.closest(".accordion-item-title");
@@ -13,9 +9,18 @@ document.addEventListener("click", (e)=> {
     const $faqTitle = $accordionItem.querySelector(".accordion-item-title");
     const $faqAnswer = $accordionItem.querySelector(".accordion-answer");
 
-    console.log("title id:", $faqTitle.id);
-    console.log("answer id:", $faqAnswer.id)
+    // expands answer
+    $faqAnswer.hidden = !$faqAnswer.hidden;
 
+    // updates aria-expanded on accordion-item-title
+    $faqAnswer.toggleAttribute("aria-expanded");
+
+    // changes the image on .accordion-item-icon
+    if(!$faqAnswer.hidden) {
+      $accordionIcon.src = "./assets/images/icon-minus.svg";
+    } else {
+      $accordionIcon.src = "./assets/images/icon-plus.svg";
+    }
   }
 
 })
