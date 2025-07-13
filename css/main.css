@@ -123,6 +123,9 @@ p, li, figcaption {
   padding-left: 1px;
 }
 
+.accordion-item-icon:hover {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 600px) {
   .header {
