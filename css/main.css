@@ -4,11 +4,13 @@
   --font: "Work Sans", sans-serif;
   --white: hsl(0, 100%, 100%);
   --purple-100: hsl(275, 100%, 97%);
-  --purple-600: hsl(292, 16%, 49%);
-  --purple-950: hsl(292, 42%, 14%);
+  --purple-600: rgb(140, 105, 145);
+  --purple-950: rgb(47, 21, 51);
+  --purple-hover: #AD28EB;
   --weight-regular: 400;
   --weight-semi-bold: 600;
   --weight-bold: 700;
+  --box-shadow: rgba(47, 21, 51, 0.15);
 }
 
 *,
@@ -26,6 +28,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  color: var(--purple-950);
 }
 
 image,
@@ -60,6 +63,8 @@ p, li, figcaption {
   background-color: var(--white);
   padding: 1rem;
   margin-top: -10vh;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 24px var(--box-shadow);
 }
 
 .header {
@@ -69,6 +74,55 @@ p, li, figcaption {
   background-position: bottom;
   background-size: cover;
 }
+
+.faq-header {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.faq-title {
+  color: var(--purple-950);
+  margin: 0.5rem 0;
+}
+
+.faq-title-icon {
+  width: 24px;
+}
+
+.accordion-question {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.accordion-item:nth-of-type(-n + 3) {
+  border-bottom: 1px solid var(--purple-100);
+}
+
+.accordion-item-title {
+  background-color: var(--white);
+  border: none;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: start;
+  transition: color 0.2s ease-in-out;
+}
+
+.accordion-item-title:hover {
+  cursor: pointer;
+  color: var(--purple-hover);
+  transition: color 0.2s ease-in-out;
+}
+
+.accordion-answer {
+  color: var(--purple-600);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+
 
 @media screen and (min-width: 600px) {
   .header {
