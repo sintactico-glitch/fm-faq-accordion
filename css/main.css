@@ -99,6 +99,12 @@ p, li, figcaption {
   text-align: start;
 }
 
+.accordion-answer {
+  color: var(--purple-600);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 @media screen and (min-width: 600px) {
   .header {
     background-image: url("/assets/images/background-pattern-desktop.svg");
