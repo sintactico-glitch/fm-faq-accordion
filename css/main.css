@@ -76,6 +76,17 @@ p, li, figcaption {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    height: 35vh;
+    background-position: top;
+  }
+
+  .faq-container {
+    margin-top: -15vh;
+  }
+}
+
 @supports not (clamp()) {
   .faq-container {
     min-width: 320px;
