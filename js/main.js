@@ -8,10 +8,13 @@ document.addEventListener("click", (e)=> {
   const $accordionIcon = clickedElement.closest(".accordion-item-icon");
 
   if($accordionTitle || $accordionIcon) {
-    const $accordionItem = clickedElement.closest(".accordionItem");
+    const $accordionItem = clickedElement.closest(".accordion-item");
 
     const $faqTitle = $accordionItem.querySelector(".accordion-item-title");
-    const $faqAnswer = $accordionItem.querySelector(".")
+    const $faqAnswer = $accordionItem.querySelector(".accordion-answer");
+
+    console.log("title id:", $faqTitle.id);
+    console.log("answer id:", $faqAnswer.id)
 
   }
 
