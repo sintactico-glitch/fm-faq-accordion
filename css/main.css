@@ -44,9 +44,8 @@ p, li, figcaption {
   text-wrap: pretty;
 }
 
-.main-container {
+body {
   background-color: var(--purple-100);
-  min-height: 100vh;
 }
 
 .faq-container {
