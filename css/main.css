@@ -120,8 +120,8 @@ p, li, figcaption {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  padding-left: 1px;
 }
-
 
 
 @media screen and (min-width: 600px) {
@@ -138,6 +138,24 @@ p, li, figcaption {
 
   .faq-container {
     margin-top: -15vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .faq-title {
+    font-size: 3rem;
+  }
+
+  .faq-title-icon {
+    width: 36px;
+  }
+
+  .header {
+    height: 40vh;
+  }
+  
+  .faq-container {
+    margin-top: -20vh;
   }
 }
 
