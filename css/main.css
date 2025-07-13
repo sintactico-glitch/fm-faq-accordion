@@ -149,6 +149,14 @@ p, li, figcaption {
   .faq-title-icon {
     width: 36px;
   }
+
+  .header {
+    height: 40vh;
+  }
+  
+  .faq-container {
+    margin-top: -20vh;
+  }
 }
 
 @supports not (clamp()) {
