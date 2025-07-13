@@ -60,6 +60,7 @@ p, li, figcaption {
   background-color: var(--white);
   padding: 1rem;
   margin-top: -10vh;
+  border-radius: 0.5rem;
 }
 
 .header {
@@ -68,6 +69,20 @@ p, li, figcaption {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+}
+
+.faq-header {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.faq-title {
+  color: var(--purple-950);
+  margin: 0.5rem 0;
+}
+
+.faq-title-icon {
+  width: 24px;
 }
 
 @media screen and (min-width: 600px) {
