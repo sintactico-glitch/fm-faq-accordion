@@ -68,7 +68,7 @@ p, li, figcaption {
 }
 
 .header {
-  background-image: url("/assets/images/background-pattern-mobile.svg");
+  background-image: url("./assets/images/background-pattern-mobile.svg");
   height: 25vh;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -129,7 +129,7 @@ p, li, figcaption {
 
 @media screen and (min-width: 600px) {
   .header {
-    background-image: url("/assets/images/background-pattern-desktop.svg");
+    background-image: url("./assets/images/background-pattern-desktop.svg");
   }
 }
 
